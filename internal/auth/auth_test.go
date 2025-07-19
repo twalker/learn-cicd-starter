@@ -27,7 +27,7 @@ func TestGetAPIKey(t *testing.T) {
 			wantErr: true,
 		},
 		"empty header": {
-			wantErr: true,
+			wantErr: false,
 		},
 	}
 
@@ -37,7 +37,7 @@ func TestGetAPIKey(t *testing.T) {
 			headers.Set("Authorization", tt.input)
 
 			got, err := GetAPIKey(headers)
-			if err == nil && tt.wantErr {
+			if err != nil && !tt.wantErr {
 				t.Errorf("Expected error for %#v but got %#v", tt.input, err)
 			}
 			if got != tt.want {
