@@ -27,7 +27,7 @@ func TestGetAPIKey(t *testing.T) {
 			wantErr: true,
 		},
 		"empty header": {
-			wantErr: false,
+			wantErr: true,
 		},
 	}
 
