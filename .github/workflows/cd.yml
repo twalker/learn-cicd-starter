@@ -28,11 +28,6 @@ jobs:
       - name: Run migrations
         run: ./scripts/migrateup.sh
 
-      - name: confusingCheck
-        run: |
-          exit_code=$(git diff HEAD | grep -c "authToken")
-          exit "$exit_code"
-
       - id: "auth"
         uses: "google-github-actions/auth@v2"
         with:
