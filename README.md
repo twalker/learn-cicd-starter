@@ -34,3 +34,13 @@ Docker commands
 docker build -t timwalker2k/notely:latest .
 docker run -e PORT=8080 -p 8080:8080 timwalker2k/notely:latest
 ```
+
+```bash
+gcloud auth configure-docker us-central1-docker.pkg.dev
+# gcloud builds submit --tag REGION-docker.pkg.dev/PROJECT_ID/REPOSITORY/IMAGE:TAG .
+gcloud builds submit --tag us-central1-docker.pkg.dev/bootscicd/notely-ar-repo/notely:latest .
+
+
+
+gcloud artifacts repositories list
+```
