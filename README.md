@@ -44,3 +44,10 @@ gcloud builds submit --tag us-central1-docker.pkg.dev/bootscicd/notely-ar-repo/n
 
 gcloud artifacts repositories list
 ```
+
+```bash
+https://test-983191307534.us-central1.run.app
+https://notely-983191307534.us-central1.run.app
+bootdev config base_url https://notely-983191307534.us-central1.run.app
+
+```
