@@ -50,4 +50,10 @@ https://test-983191307534.us-central1.run.app
 https://notely-983191307534.us-central1.run.app
 bootdev config base_url https://notely-983191307534.us-central1.run.app
 
+
+turso auth login
+turso db list
+turso db shell notely-db
+
+libsql://notely-db-twalker.aws-us-east-2.turso.io
 ```
