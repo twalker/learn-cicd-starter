@@ -25,3 +25,12 @@ You do _not_ need to set up a database or any interactivity on the webpage yet. 
 twalker's version of Boot.dev's Notely app.
 
 ![test status](https://github.com/twalker/learn-cicd-starter/actions/workflows/ci.yml/badge.svg)
+
+## Notes
+
+Docker commands
+
+```bash
+docker build -t timwalker2k/notely:latest .
+docker run -e PORT=8080 -p 8080:8080 timwalker2k/notely:latest
+```
